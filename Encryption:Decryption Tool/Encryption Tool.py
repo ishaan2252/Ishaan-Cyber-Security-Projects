@@ -12,10 +12,10 @@ f = Fernet(key)
 print(f"This is your key, store this in a safe place: {str(key)}")
 
 # Prompt the end user to input the string they want encrypted.
-user_messagetoencrypt = input("Enter your Message to Encrypt Here: ")
+user_Message_To_Encrypt = input("Enter your Message to Encrypt Here: ")
 
 # Encrypt the message entered using the token stored as "f"
-token = f.encrypt(user_messagetoencrypt.encode())
+token = f.encrypt(user_Message_To_Encrypt.encode())
 
 # Print to user the token (encrypted data)
 print("This is your encrypted data:")
